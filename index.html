@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocenteBot - Asistente 24/7 en Telegram con Google Sheets</title>
+  <meta name="description" content="Automatizá la gestión de tu cátedra en Telegram. Calificaciones privadas por DNI, presentismo por horario, bitácora de novedades y respuestas a preguntas frecuentes con Google Sheets.">
+  
+  <!-- Color de la barra de estado y navegador en móviles -->
+  <meta name="theme-color" content="#020617">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#020617">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DocenteBot">
+
+  <!-- URL Canónica -->
+  <link rel="canonical" href="https://docentebot.netlify.app/">
+
+  <!-- Metadatos Open Graph / WhatsApp / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://docentebot.netlify.app/">
+  <meta property="og:site_name" content="DocenteBot">
+  <meta property="og:title" content="DocenteBot - Asistente 24/7 en Telegram con Google Sheets">
+  <meta property="og:description" content="Automatizá la gestión de tu cátedra en Telegram. Calificaciones privadas por DNI, presentismo por horario, bitácora de novedades y respuestas a preguntas frecuentes con Google Sheets.">
+  <meta property="og:image" content="https://docentebot.netlify.app/assets/docente_bot_og.png">
+  <meta property="og:image:secure_url" content="https://docentebot.netlify.app/assets/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DocenteBot - Asistente Virtual para Cátedras y Docentes">
+
+  <!-- Tarjetas para Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://docentebot.netlify.app/">
+  <meta name="twitter:title" content="DocenteBot - Asistente 24/7 en Telegram con Google Sheets">
+  <meta name="twitter:description" content="Automatizá la gestión de tu cátedra en Telegram. Calificaciones privadas por DNI, presentismo por horario, bitácora de novedades y respuestas a preguntas frecuentes con Google Sheets.">
+  <meta name="twitter:image" content="https://docentebot.netlify.app/assets/og-preview.png">
+
+  <!-- Favicon e íconos -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  
+  <!-- Tipografía Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS vía CDN y Configuración Externa -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+  <!-- Íconos Lucide vía CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-slate-950">
+
+  <!-- ================= COMPONENTES MODULARES (DRY) ================= -->
+  <div data-include="components/navbar.html"></div>
+  <div data-include="components/hero.html"></div>
+  <div data-include="components/how_it_works_screens.html"></div>
+  <div data-include="components/features.html"></div>
+  <div data-include="components/onboarding.html"></div>
+  <div data-include="components/pricing.html"></div>
+  <div data-include="components/social_impact.html"></div>
+  <div data-include="components/footer.html"></div>
+
+  <!-- Scripts Modulares -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

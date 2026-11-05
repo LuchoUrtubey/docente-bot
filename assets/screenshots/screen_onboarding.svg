@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1621" />
+      <stop offset="100%" stop-color="#0b1119" />
+    </linearGradient>
+    <linearGradient id="userBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b5278" />
+      <stop offset="100%" stop-color="#244566" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Phone Screen -->
+  <rect width="400" height="700" fill="url(#bgGrad)" />
+
+  <!-- Telegram Chat Top Header -->
+  <rect width="400" height="60" fill="#17212b" />
+  <circle cx="35" cy="30" r="18" fill="#2b5278" />
+  <text x="35" y="36" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">DB</text>
+  <text x="65" y="27" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold">DocenteBot</text>
+  <text x="65" y="42" fill="#5b88bd" font-family="Inter, sans-serif" font-size="11">bot oficial de cátedra</text>
+
+  <!-- Timestamp Badge -->
+  <rect x="140" y="80" width="120" height="22" rx="11" fill="#1e2c3a" />
+  <text x="200" y="95" fill="#7f9fb5" font-family="Inter, sans-serif" font-size="10" text-anchor="middle">HOY • 18:30</text>
+
+  <!-- Bot Message 1: Welcome & Request DNI -->
+  <rect x="20" y="120" width="310" height="85" rx="12" fill="#182533" />
+  <text x="35" y="145" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">👋 ¡Bienvenido/a a la materia!</text>
+  <text x="35" y="165" fill="#cad5e2" font-family="Inter, sans-serif" font-size="11">Para proteger tus notas y asistencias,</text>
+  <text x="35" y="180" fill="#cad5e2" font-family="Inter, sans-serif" font-size="11">escribí tu DNI (sin puntos):</text>
+  <text x="300" y="195" fill="#6c7f93" font-family="Inter, sans-serif" font-size="9" text-anchor="end">18:30</text>
+
+  <!-- Student Input DNI -->
+  <rect x="250" y="225" width="130" height="40" rx="12" fill="url(#userBubble)" />
+  <text x="265" y="250" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="bold">40111222</text>
+  <text x="365" y="258" fill="#8cb3d9" font-family="Inter, sans-serif" font-size="9" text-anchor="end">18:31 ✓✓</text>
+
+  <!-- Bot Message 2: Two-Step Confirm Prompt -->
+  <rect x="20" y="285" width="330" height="150" rx="12" fill="#182533" />
+  <text x="35" y="312" fill="#64b5f6" font-family="Inter, sans-serif" font-size="12" font-weight="bold">🔎 Legajo Encontrado:</text>
+  <text x="35" y="335" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">👤 PÉREZ, JUAN MANUEL</text>
+  <text x="35" y="355" fill="#cad5e2" font-family="Inter, sans-serif" font-size="11">DNI: 40111222</text>
+  <text x="35" y="380" fill="#cad5e2" font-family="Inter, sans-serif" font-size="11">¿Confirmás vincular este usuario?</text>
+  
+  <!-- Interactive Telegram Inline Buttons -->
+  <rect x="35" y="398" width="145" height="28" rx="6" fill="#2b5278" />
+  <text x="107" y="416" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✅ Sí, soy yo</text>
+
+  <rect x="190" y="398" width="145" height="28" rx="6" fill="#263b50" />
+  <text x="262" y="416" fill="#e25c5c" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">❌ No, me equivoqué</text>
+
+  <!-- Success confirmation message -->
+  <rect x="20" y="460" width="330" height="75" rx="12" fill="#182533" />
+  <text x="35" y="485" fill="#4caf50" font-family="Inter, sans-serif" font-size="12" font-weight="bold">🎉 ¡Cuenta vinculada exitosamente!</text>
+  <text x="35" y="505" fill="#cad5e2" font-family="Inter, sans-serif" font-size="11">Ya podés consultar tus notas y enviar dudas.</text>
+  <text x="35" y="520" fill="#64b5f6" font-family="Inter, sans-serif" font-size="11">Probá escribiendo: "mis notas"</text>
+
+  <!-- Telegram Bottom Input Bar -->
+  <rect y="640" width="400" height="60" fill="#17212b" />
+  <rect x="15" y="650" width="320" height="40" rx="20" fill="#0e1621" />
+  <text x="35" y="675" fill="#6c7f93" font-family="Inter, sans-serif" font-size="13">Mensaje...</text>
+  <circle cx="365" cy="670" r="18" fill="#5b88bd" />
+  <!-- Send Icon Arrow -->
+  <path d="M360 662 L372 670 L360 678 Z" fill="#ffffff" />
+</svg>

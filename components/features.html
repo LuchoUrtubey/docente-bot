@@ -1,0 +1,111 @@
+<!-- ================= CARACTERÍSTICAS PRINCIPALES ================= -->
+<section id="caracteristicas" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-3xl mx-auto mb-16">
+    <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Diseño para Cátedras Reales</span>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Todo lo que necesitás para gestionar tu materia</h2>
+    <p class="text-slate-400 mt-3">Automatizá la logística repetitiva para que puedas enfocarte 100% en la pedagogía.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Feature 1: Notas y DNI -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5">
+        <i data-lucide="shield-check" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Privacidad de Notas por DNI</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Verificación de identidad en 2 pasos en Telegram. Cada estudiante solo accede a sus notas privadas; nadie puede espiar las de un compañero.
+      </p>
+    </div>
+
+    <!-- Feature 2: Presentismo Dinámico -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5">
+        <i data-lucide="clock" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Presentismo Dinámico por Horario</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Palabra clave válida únicamente en días y horarios estipulados de clase. Rechaza intentos fuera de hora automáticamente.
+      </p>
+    </div>
+
+    <!-- Feature 3: Reconocimiento de Voz -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-5">
+        <i data-lucide="mic" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Reconocimiento de Voz Nativo</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Soporte para notas de voz de Telegram. Transcribe el audio con <em>SpeechRecognition</em> y responde la consulta académica con <em>NLTK</em>.
+      </p>
+    </div>
+
+    <!-- Feature 4: Agenda Ministerial y EMIs -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-5">
+        <i data-lucide="calendar" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Agenda Ministerial y EMIs</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Sincroniza solo desde internet con <code>/sync_agenda</code> feriados oficiales y jornadas EMI de CABA para prevenir reprogramaciones de parciales con <code>/alerta</code>.
+      </p>
+    </div>
+
+    <!-- Feature 5: Actas en PDF -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5">
+        <i data-lucide="file-text" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Actas en PDF en 1 Clic</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Generá planillas oficiales tabuladas de calificaciones y asistencias con membrete institucional, estadísticas de cursada y bloque de firmas con <code>/acta</code>.
+      </p>
+    </div>
+
+    <!-- Feature 6: Comunicados Broadcast -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-5">
+        <i data-lucide="radio" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Comunicados Masivos (Broadcast)</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Enviá avisos directos y oficiales al chat privado de todos tus estudiantes vinculados con <code>/comunicado</code>, sin el caos ni el ruido de los grupos de WhatsApp.
+      </p>
+    </div>
+
+    <!-- Feature 7: Bitácora de Emergencias -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-5">
+        <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Bitácora con Alerta Push</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Los avisos de demoras o inasistencias se guardan solos en el Sheet. Ante emergencias médicas o familiares, te manda una alerta push directa a tu Telegram.
+      </p>
+    </div>
+
+    <!-- Feature 8: Gestión de Contingencias -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center mb-5">
+        <i data-lucide="megaphone" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Gestión de Contingencias</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Ante paros de transporte o imprevistos edilicios, tirás <code>/suspender [fecha] [motivo]</code> y el bot atiende a los estudiantes con el mensaje oficial.
+      </p>
+    </div>
+
+    <!-- Feature 9: Base de Datos en Google Sheets -->
+    <div class="feature-card">
+      <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5">
+        <i data-lucide="table" class="w-6 h-6"></i>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Headless Google Sheets</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Toda tu cátedra vive en tu propio Google Drive. Editá notas o configuraciones en vivo con soporte de fórmulas y sincronización en memoria de alta velocidad.
+      </p>
+    </div>
+
+  </div>
+</section>

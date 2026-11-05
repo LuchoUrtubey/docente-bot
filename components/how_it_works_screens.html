@@ -1,0 +1,225 @@
+<!-- ================= CÓMO FUNCIONA CON CAPTURAS REALES ================= -->
+<section id="capturas" class="py-20 bg-slate-900/60 border-y border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Demostración Visual</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Cómo Funciona en Pantallas Reales</h2>
+      <p class="text-slate-400 mt-3">
+        Sin trucos ni pantallas simuladas abstractas. Así es exactamente como interactúan tus estudiantes en Telegram y cómo recibís vos la información en Google Sheets.
+      </p>
+    </div>
+
+    <!-- Pestañas de Navegación de la Galería -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-10 max-w-4xl mx-auto">
+      <button data-gallery-tab="screen-1" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border bg-indigo-600 text-white border-indigo-500 shadow-md">
+        1. Vinculación Segura (DNI)
+      </button>
+      <button data-gallery-tab="screen-2" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border bg-slate-900 text-slate-400 border-slate-800 hover:text-white">
+        2. Consulta de Notas Privadas
+      </button>
+      <button data-gallery-tab="screen-3" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border bg-slate-900 text-slate-400 border-slate-800 hover:text-white">
+        3. Presentismo & Notas de Voz
+      </button>
+      <button data-gallery-tab="screen-4" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border bg-slate-900 text-slate-400 border-slate-800 hover:text-white">
+        4. Planilla Docente en Vivo
+      </button>
+    </div>
+
+    <!-- PANEL 1: VINCULACIÓN SEGURA (DNI) -->
+    <div data-gallery-panel="screen-1" class="block animate-fadeIn">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
+        
+        <!-- Explicación (5 columnas) -->
+        <div class="lg:col-span-5 text-left space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-semibold">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            Paso 1: Onboarding del Estudiante
+          </div>
+          <h3 class="text-2xl font-bold text-white">Verificación en 2 pasos con botones de Telegram</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Cuando el estudiante inicia el bot por primera vez, ingresa su DNI. El sistema busca su legajo en la planilla y le pide <strong>confirmación explícita mediante botones interactivos</strong>.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Vinculación permanente e inmutable al <code>telegram_user_id</code>.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Bloquea que otro usuario consulte el mismo DNI.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>El estudiante puede autogestionar el cambio con <code>/desvincular</code>.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Marco de Captura de Dispositivo Móvil (7 columnas) -->
+        <div class="lg:col-span-7 flex justify-center">
+          <div class="device-frame max-w-[340px] w-full">
+            <div class="device-header">
+              <div class="flex items-center gap-2 text-xs text-slate-300">
+                <i data-lucide="send" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span class="font-bold">Telegram</span>
+              </div>
+              <span class="text-[10px] text-emerald-400">● En línea</span>
+            </div>
+            
+            <div class="screenshot-container">
+              <!-- Recurso de Captura Real (con alternativa SVG) -->
+              <img src="assets/screenshots/screen_onboarding.svg" alt="Captura de vinculación por DNI en Telegram" onerror="this.onerror=null; this.src='assets/screenshots/fallback_screen.svg';">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PANEL 2: CONSULTA DE NOTAS PRIVADAS -->
+    <div data-gallery-panel="screen-2" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
+        
+        <div class="lg:col-span-5 text-left space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            Paso 2: Transparencia & Privacidad
+          </div>
+          <h3 class="text-2xl font-bold text-white">Reporte académico personal al instante</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            El estudiante simplemente escribe <em>"mis notas"</em> o <em>"cómo voy"</em> y el bot le devuelve una tarjeta formateada con sus parciales, entrega de TP, porcentaje de asistencia y condición actual.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Lectura directa de las fórmulas del Google Sheet del docente.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Actualización en tiempo real: modificás una nota y el bot ya la sabe.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Disponible 24/7 sin molestar al profesor.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7 flex justify-center">
+          <div class="device-frame max-w-[340px] w-full">
+            <div class="device-header">
+              <div class="flex items-center gap-2 text-xs text-slate-300">
+                <i data-lucide="send" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span class="font-bold">Telegram</span>
+              </div>
+              <span class="text-[10px] text-emerald-400">● En línea</span>
+            </div>
+            
+            <div class="screenshot-container">
+              <img src="assets/screenshots/screen_grades.svg" alt="Captura de consulta de notas en Telegram" onerror="this.onerror=null; this.src='assets/screenshots/fallback_screen.svg';">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PANEL 3: PRESENTISMO & NOTAS DE VOZ -->
+    <div data-gallery-panel="screen-3" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
+        
+        <div class="lg:col-span-5 text-left space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold">
+            <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+            Paso 3: Cero Fricción en el Aula
+          </div>
+          <h3 class="text-2xl font-bold text-white">Presentismo por horario y consultas por audio</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            El profesor dicta la palabra clave del día en clase. Los estudiantes la envían por Telegram y el sistema valida si están dentro de la ventana de tolerancia estipulada en el cronograma.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Rechaza palabras enviadas fuera del horario de cursada.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Soporte de <strong>notas de voz de Telegram</strong> con transcripción automática.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Ahorra hasta 15 minutos por clase de pasar lista en papel.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7 flex justify-center">
+          <div class="device-frame max-w-[340px] w-full">
+            <div class="device-header">
+              <div class="flex items-center gap-2 text-xs text-slate-300">
+                <i data-lucide="send" class="w-3.5 h-3.5 text-sky-400"></i>
+                <span class="font-bold">Telegram</span>
+              </div>
+              <span class="text-[10px] text-emerald-400">● En línea</span>
+            </div>
+            
+            <div class="screenshot-container">
+              <img src="assets/screenshots/screen_attendance_voice.svg" alt="Captura de asistencia y audio en Telegram" onerror="this.onerror=null; this.src='assets/screenshots/fallback_screen.svg';">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PANEL 4: PLANILLA DOCENTE EN VIVO -->
+    <div data-gallery-panel="screen-4" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
+        
+        <div class="lg:col-span-4 text-left space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
+            <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i>
+            Paso 4: El Panel de Control
+          </div>
+          <h3 class="text-2xl font-bold text-white">Tu Google Sheet se alimenta en segundo plano</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Vos no tenés que aprender ningún software nuevo. Toda la información entra ordenada en las pestañas correspondientes de tu Google Drive.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Pestaña <code>ATTENDANCE_LOG</code> con hora exacta de cada presente.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Pestaña <code>LOGBOOK</code> con avisos de demoras e inasistencias.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Pestaña <code>CONFIG</code> para cambiar fechas de parcial sin tocar código.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-8 flex justify-center">
+          <div class="device-frame max-w-[700px] w-full">
+            <div class="device-header">
+              <div class="flex items-center gap-2 text-xs text-slate-300">
+                <i data-lucide="sheet" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span class="font-bold">Google Sheets - Cátedra Oficial</span>
+              </div>
+              <span class="text-[10px] text-slate-400">Vista de Escritorio</span>
+            </div>
+            
+            <div class="screenshot-container desktop-ratio">
+              <img src="assets/screenshots/screen_sheet_live.svg" alt="Captura del Google Sheet del docente" onerror="this.onerror=null; this.src='assets/screenshots/fallback_screen.svg';">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

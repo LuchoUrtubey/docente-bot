@@ -1,0 +1,73 @@
+/* Estilos de Componentes Modulares: Tarjetas, Marcos de Capturas, Insignias y Pestañas */
+
+/* Marco de Dispositivo / Mockup */
+.device-frame {
+  background: #090d16;
+  border: 1px solid #1e293b;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.device-frame:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+}
+
+.device-header {
+  background: #020617;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.screenshot-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background-color: #0b0f19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.screenshot-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.screenshot-container.desktop-ratio {
+  aspect-ratio: 16 / 10;
+}
+
+/* Tarjetas de Funcionalidades */
+.feature-card {
+  background: #0b0f19;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  border-color: #4f46e5;
+  background: #0f172a;
+}
+
+/* Barra de Desplazamiento Personalizada para el Contenedor de Chat */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
